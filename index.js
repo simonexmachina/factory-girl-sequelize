@@ -1,4 +1,4 @@
-var Factory = require('factory-lady'),
+var Factory = require('factory-girl'),
     Adapter = Factory.Adapter;
 
 var SequelizeAdapter = function() {};
