@@ -1,0 +1,27 @@
+{
+  "name": "factory-girl-sequelize",
+  "version": "0.1.0",
+  "description": "A Sequelize adapter for factory-girl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aexmachina/factory-girl-sequelize.git"
+  },
+  "keywords": [
+    "factory-girl",
+    "factory",
+    "test",
+    "bdd",
+    "tdd",
+    "fixture"
+  ],
+  "author": "Simon Wade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aexmachina/factory-girl-sequelize/issues"
+  },
+  "homepage": "https://github.com/aexmachina/factory-girl-sequelize"
+}
