@@ -8,11 +8,18 @@ SequelizeAdapter.prototype.create = function(Model, props) {
 };
 SequelizeAdapter.prototype.save = function(doc, Model, cb) {
   doc.save()
-    .success(function() {
-      cb();
-    })
+    .success(cb)
     .error(function(event) {
       var err = new Error('Failed to save fixture');
+      err.event = event;
+      cb(err);
+    });
+};
+SequelizeAdapter.prototype.destroy = function(doc, Model, cb) {
+  doc.destroy()
+    .success(cb)
+    .error(function(event) {
+      var err = new Error('Failed to destroy fixture');
       err.event = event;
       cb(err);
     });
