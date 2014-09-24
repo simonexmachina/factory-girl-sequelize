@@ -1,28 +1,19 @@
 var Factory = require('factory-girl'),
     Adapter = Factory.Adapter;
 
-var SequelizeAdapter = function() {};
+var SequelizeAdapter = function () {};
 SequelizeAdapter.prototype = new Adapter();
-SequelizeAdapter.prototype.create = function(Model, props) {
+
+SequelizeAdapter.prototype.build = function(Model, props) {
   return Model.build(props);
 };
+
 SequelizeAdapter.prototype.save = function(doc, Model, cb) {
-  doc.save()
-    .success(cb)
-    .error(function(event) {
-      var err = new Error('Failed to save fixture');
-      err.event = event;
-      cb(err);
-    });
+  doc.save().complete(cb);
 };
+
 SequelizeAdapter.prototype.destroy = function(doc, Model, cb) {
-  doc.destroy()
-    .success(cb)
-    .error(function(event) {
-      var err = new Error('Failed to destroy fixture');
-      err.event = event;
-      cb(err);
-    });
+  doc.destroy().complete(cb);
 };
 
 var adapter = new SequelizeAdapter();
