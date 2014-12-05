@@ -27,4 +27,5 @@ module.exports = function(models) {
   else {
     Factory.setAdapter(adapter);
   }
+  return adapter;
 };

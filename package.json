@@ -4,7 +4,7 @@
   "description": "A Sequelize adapter for factory-girl",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,21 @@
   "bugs": {
     "url": "https://github.com/aexmachina/factory-girl-sequelize/issues"
   },
-  "homepage": "https://github.com/aexmachina/factory-girl-sequelize"
+  "homepage": "https://github.com/aexmachina/factory-girl-sequelize",
+  "peerDependencies": {
+    "factory-girl": "*"
+  },
+  "files": [
+    "index.js",
+    "config/",
+    "test/*.js"
+  ],
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "config-node": "^1.2.2",
+    "factory-girl": "^1.1.2",
+    "mocha": "^2.0.1",
+    "sequelize": "^2.0.0-rc3",
+    "sqlite3": "^3.0.4"
+  }
 }

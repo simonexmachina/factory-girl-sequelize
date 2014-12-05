@@ -1,5 +1,7 @@
 # factory-girl-sequelize
 
+[![Build Status](https://travis-ci.org/aexmachina/factory-girl-sequelize.png)](https://travis-ci.org/aexmachina/factory-girl-sequelize)
+
 A Sequelize adapter for [factory-girl](https://github.com/aexmachina/factory-girl).
 
 ## Usage
