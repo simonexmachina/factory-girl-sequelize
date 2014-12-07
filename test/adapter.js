@@ -18,8 +18,7 @@ describe('Bookshelf adapter', function() {
     }, cb);
   }
   function instanceOf(model, Model) {
-    // TODO can't find out how to do this, see https://github.com/sequelize/sequelize/issues/2672
-    return true;
+    return model instanceof Model.Instance;
   }
   function init() {
     before(function() {
