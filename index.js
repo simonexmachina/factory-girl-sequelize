@@ -9,11 +9,11 @@ SequelizeAdapter.prototype.build = function(Model, props) {
 };
 
 SequelizeAdapter.prototype.save = function(doc, Model, cb) {
-  doc.save().complete(cb);
+  doc.save().then(cb);
 };
 
 SequelizeAdapter.prototype.destroy = function(doc, Model, cb) {
-  doc.destroy().complete(cb);
+  doc.destroy().then(cb);
 };
 
 var adapter = new SequelizeAdapter();
