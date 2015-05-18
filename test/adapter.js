@@ -24,7 +24,7 @@ describe('Bookshelf adapter', function() {
     before(function() {
       return sequelize.sync()
         .then(function() {
-          return Model.destroy();
+          return Model.destroy({where: {}});
         });
     });
   }
