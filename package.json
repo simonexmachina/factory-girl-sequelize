@@ -37,7 +37,7 @@
     "config-node": "^1.2.2",
     "factory-girl": "^1.1.2",
     "mocha": "^2.0.1",
-    "sequelize": "^2.0.0-rc3",
+    "sequelize": "^3.0.0",
     "sqlite3": "^3.0.4"
   }
 }
