@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/aexmachina/factory-girl-sequelize",
   "peerDependencies": {
-    "factory-girl": "*"
+    "factory-girl": "^3.0.0"
   },
   "files": [
     "index.js",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "config-node": "^1.2.2",
-    "factory-girl": "^1.1.2",
+    "factory-girl": "^3.0.0",
     "mocha": "^2.0.1",
     "sequelize": "^3.0.0",
     "sqlite3": "^3.0.4"
