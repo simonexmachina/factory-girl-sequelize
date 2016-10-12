@@ -1,6 +1,6 @@
 {
   "name": "factory-girl-sequelize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Sequelize adapter for factory-girl",
   "main": "index.js",
   "scripts": {
