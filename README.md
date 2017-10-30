@@ -1,3 +1,5 @@
+**This package has been deprecated:** Sequelize support is now included in the factory-girl package
+
 # factory-girl-sequelize
 
 [![Build Status](https://travis-ci.org/aexmachina/factory-girl-sequelize.png)](https://travis-ci.org/aexmachina/factory-girl-sequelize)
